@@ -1,0 +1,53 @@
+<div  id="button">-</div>
+<font size="5">dcdccdsc</font><br>
+<div id="widnow">
+
+<input id="box" type="text">
+</div>
+
+$("#button").click(function(){
+    if($(this).html() == "-"){
+        $(this).html("+");
+    }
+    else{
+        $(this).html("-");
+    }
+    $("#box").slideToggle();
+});
+
+#widnow{
+    width:400px;
+    border:solid 1px;
+    
+}
+
+#title_bar{
+    background: #FEFEFE;
+    height: 25px;
+    width: 100%;
+}
+#button{
+    border:solid 1px;
+    width: 16px;
+    height: 16px;
+    float:left;
+    font-size : 16px;
+    cursor:pointer;
+    text-align:center;
+}
+#box{
+    height: 250px;
+    width:400px;
+    text-align:top;
+}
+<textarea class="wideInput" ></textarea>
+
+.wideInput{
+    text-align: left;
+    padding-left:0;
+    padding-top:0;
+    padding-bottom:0.4em;
+    padding-right: 0.4em;
+    width: 400px;
+    height: 200px;
+}
